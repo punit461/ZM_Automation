@@ -46,7 +46,7 @@ if display[0] == 'n':
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--window-size=1920x1080")
-    chrome_options.binary_location = 'C:\link\Link_gen_lav\Canary\Chrome SxS\Application\chrome.exe'
+    chrome_options.binary_location = 'C:\link\Canary\Chrome SxS\Application\chrome.exe'
     driver = webdriver.Chrome(options=chrome_options, executable_path='C:\Codes_projects_python\SMS Sender\chromedrivercanary.exe')
 elif display[0] =='y':
     driver = webdriver.Chrome('C:\Codes_projects_python\SMS Sender\chromedriver')
@@ -67,8 +67,8 @@ sheet = client.open('SMS').sheet1
 
 driver.get("https://zm.force.com/ZMCollectionteam/login")
 driver.implicitly_wait(100)
-driver.find_element_by_id("username").send_keys("simran@zestmoney.in")
-driver.find_element_by_id("password").send_keys("welcome@1")
+driver.find_element_by_id("username").send_keys("######")# enter the username here
+driver.find_element_by_id("password").send_keys("#####")# enter the password here
 driver.find_element_by_id("Login").click()
 time.sleep(5)
 driver.get("https://zm.force.com/ZMCollectionteam/apex/SMSUsingGupshup_1?id=a000K0000223jLcQAI&ObjectType=Customer")
